@@ -4,7 +4,7 @@
       <v-list nav>
         <v-list-item to="/">
           <v-list-item-avatar tile size="24">
-            <v-icon>mdi-home</v-icon>
+            <img :src="require('@/assets/logo.svg')"/>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
