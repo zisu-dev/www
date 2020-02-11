@@ -1,0 +1,38 @@
+.v-application code, .v-application kbd {
+  display: initial;
+  border: initial;
+  white-space: initial;
+  font-size: initial;
+  font-weight: initial;
+}
+
+.v-application code {
+  background-color: initial;
+  color: initial;
+  -webkit-box-shadow: initial;
+  box-shadow: initial;
+}
+
+.fill-width {
+  width: 100%
+}
+
+.v-application {
+  background-image: url() !important;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.v-navigation-drawer {
+  transition: .3s;
+}
+
+.theme--light.v-navigation-drawer {
+  background: #ffffff7f !important;
+  backdrop-filter: blur(3px);
+}
+
+.theme--light.v-navigation-drawer:hover {
+  background: #ffffff !important;
+}
