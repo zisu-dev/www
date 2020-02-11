@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card color="#3498db" dark hover>
+        <v-card color="#3498db" dark hover class="vibrancy">
           <v-row justify="space-between">
             <v-col cols="auto">
               <v-avatar tile class="ma-2" size="64">
@@ -25,7 +25,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card>
+        <v-card class="vibrancy">
           <v-list>
             <v-list-item>
               <v-list-item-avatar>

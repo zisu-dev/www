@@ -3,14 +3,18 @@
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
         <v-card color="primary" dark>
-          <v-card-title>Welcome</v-card-title>
-
+          <v-card-title>
+            <div class="fill-width">
+              <div class="text-uppercase font-italic font-weight-light subheading">Welcome to</div>
+              <div class="text-right">ZhangZisu.CN</div>
+            </div>
+          </v-card-title>
         </v-card>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card>
+        <v-card class="vibrancy">
           <v-card-title>Next</v-card-title>
           <v-list>
             <v-list-item href="https://dt.zhangzisu.cn/cockpit" target="_blank">
@@ -28,7 +32,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card>
+        <v-card class="vibrancy">
           <v-card-title>Build info</v-card-title>
           <v-list>
             <v-list-item :href="build.git" target="_blank">

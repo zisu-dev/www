@@ -24,19 +24,29 @@ body {
   background-attachment: fixed;
 }
 
-.v-application {
+.vibrancy.v-application {
   background: transparent !important;
 }
 
-.v-navigation-drawer {
+.vibrancy.v-navigation-drawer {
   transition: .3s;
 }
 
-.theme--light.v-navigation-drawer {
+.vibrancy.theme--light.v-navigation-drawer {
   background: #ffffff7f !important;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
 }
 
-.theme--light.v-navigation-drawer:hover {
+.vibrancy.theme--light.v-navigation-drawer:hover {
   background: #ffffff !important;
+}
+
+.vibrancy.v-card {
+  opacity: .7;
+  transition: .3s;
+  backdrop-filter: blur(10px);
+}
+
+.vibrancy.v-card:hover {
+  opacity: 1;
 }

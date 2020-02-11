@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app expand-on-hover disable-resize-watcher disable-route-watcher permanent :value="true">
+  <v-app class="vibrancy">
+    <v-navigation-drawer app expand-on-hover disable-resize-watcher disable-route-watcher permanent :value="true" class="vibrancy">
       <v-list nav>
         <v-list-item to="/">
           <v-list-item-avatar tile size="24">
