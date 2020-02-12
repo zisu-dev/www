@@ -13,8 +13,10 @@ const MainlandChina = [
   'coding'
 ]
 
-const enableHistory = !HistoryBlacklist.includes(machine)
-const inMainlandChina = MainlandChina.includes(machine)
+const enableHistory = (!!process.env.ENABLE_HISTORY) ||
+  !HistoryBlacklist.includes(machine)
+const inMainlandChina = (!!process.env.IN_MAINLAND_CHINA) ||
+  MainlandChina.includes(machine)
 
 module.exports = {
   configureWebpack: {

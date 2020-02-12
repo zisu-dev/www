@@ -179,7 +179,7 @@
 </template>
 
 <script>
-import gravatar from 'gravatar'
+import { gravatarURL } from '@/plugins/mlc'
 
 /* global GIT_HASH, BUILD_DATE, BUILD_MACHINE */
 
@@ -197,7 +197,7 @@ export default {
       machine: BUILD_MACHINE
     },
     email,
-    avatar: gravatar.url(email, { s: 128 })
+    avatar: gravatarURL(email, 128)
   })
 }
 </script>
