@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "https://mainland.zhangzisu.cn/:splat"
+  to = "https://mainland.zhangzisu.cn/#/:splat"
   status = 301
   force = true
   conditions = {Country = ["cn"]}

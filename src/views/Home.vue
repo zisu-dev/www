@@ -1,19 +1,45 @@
 <template>
   <v-container class="home">
+    <v-row justify="center" v-show="mainlandChina">
+      <v-col cols="12" sm="6" md="4">
+        <v-alert prominent v-model="mainlandChina" type="error" class="ma-0">
+          <div class="subtitle-1">Your're in mainland China.</div>
+          <div class="caption">
+            Due to the network restrictions,
+            <ul>
+              <li>The site will switch to mainland China servers when possible;</li>
+              <li>Some function will be disabled;</li>
+              <li>However, you may still experience slow performance.</li>
+            </ul>
+            Please, bypass the GFW for a real internet.
+          </div>
+        </v-alert>
+      </v-col>
+    </v-row>
+    <v-row justify="center" v-show="ipv4Only">
+      <v-col cols="12" sm="6" md="4">
+        <v-alert prominent v-model="ipv4Only" type="warning" class="ma-0">
+          <div class="subtitle-1">IPv4-Only network detected.</div>
+          <div class="caption">
+            <ul>
+              <li>Some server will become inaccessible;</li>
+              <li>Some server will use proxy;</li>
+              <li>You may experience performance downgrade.</li>
+            </ul>
+            Please contact your ISP for IPv6 support.
+          </div>
+        </v-alert>
+      </v-col>
+    </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
         <v-card color="primary" dark class="vibrancy">
           <v-card-title>
             <div class="fill-width">
-              <div class="text-uppercase font-italic font-weight-light subheading">Welcome to</div>
+              <div class="text-uppercase font-italic font-weight-light subtitle-1">Welcome to</div>
               <div class="text-right">ZhangZisu.CN</div>
             </div>
           </v-card-title>
-          <v-alert v-model="ipv4Only" type="warning">
-            IPv4-Only network detected.
-          </v-alert>
-          <v-card >
-          </v-card>
         </v-card>
       </v-col>
     </v-row>
@@ -46,67 +72,20 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row justify="center">
-      <v-col cols="12" sm="6" md="4">
-        <v-card class="vibrancy">
-          <v-card-title>Build info</v-card-title>
-          <v-list>
-            <v-list-item :href="build.git" target="_blank">
-              <v-list-item-icon>
-                <v-icon>mdi-git</v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-subtitle>Git hash</v-list-item-subtitle>
-                <v-list-item-title>
-                  <code>{{ build.hash }}</code>
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-server</v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-subtitle>Build machine</v-list-item-subtitle>
-                <v-list-item-title>
-                  <code>{{ build.machine }}</code>
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-calendar</v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-subtitle>Build date</v-list-item-subtitle>
-                <v-list-item-title>
-                  <code>{{ build.date }}</code>
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-card>
-      </v-col>
-    </v-row>
   </v-container>
 </template>
 
 <script>
-/* global GIT_HASH, BUILD_DATE, BUILD_MACHINE */
+/* global MAINLAND_CHN */
 
 export default {
   name: 'Home',
   components: {
   },
   data: () => ({
-    build: {
-      hash: GIT_HASH.substr(0, 6),
-      git: `https://github.com/ZhangZisu/www/commit/${GIT_HASH}`,
-      date: BUILD_DATE,
-      machine: BUILD_MACHINE
-    },
     ipv4Only: false,
-    ipv6: ''
+    ipv6: '',
+    mainlandChina: true || MAINLAND_CHN
   }),
   methods: {
     async loadIPv6 () {
