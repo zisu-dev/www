@@ -11,7 +11,8 @@
               <li>Some function will be disabled;</li>
               <li>However, you may still experience slow performance.</li>
             </ul>
-            Please, bypass the GFW for a real internet.
+            If you have already using a bypass service,
+            <a href="https://zhangzisu.cn">click here.</a>
           </div>
         </v-alert>
       </v-col>
