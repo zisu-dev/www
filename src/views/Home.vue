@@ -86,7 +86,7 @@ export default {
   data: () => ({
     ipv4Only: false,
     ipv6: '',
-    mainlandChina: true || MAINLAND_CHN
+    mainlandChina: MAINLAND_CHN
   }),
   methods: {
     async loadIPv6 () {
