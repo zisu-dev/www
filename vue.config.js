@@ -3,7 +3,9 @@ const { DefinePlugin } = require('webpack')
 const gitRevision = require('git-revision')
 const ciDetect = require('@npmcli/ci-detect')
 
-const machine = ciDetect() || os.hostname()
+const machine = process.env.CI_OVERRIDE || ciDetect() || os.hostname()
+
+const enableHistory = !['coding'].includes(machine)
 
 module.exports = {
   configureWebpack: {
@@ -12,7 +14,8 @@ module.exports = {
         GIT_HASH: JSON.stringify(gitRevision('hash')),
         GIT_BRANCH: JSON.stringify(gitRevision('branch')),
         BUILD_DATE: JSON.stringify((new Date()).toLocaleString()),
-        BUILD_MACHINE: JSON.stringify(machine)
+        BUILD_MACHINE: JSON.stringify(machine),
+        USE_HISTORY: JSON.stringify(enableHistory)
       })
     ]
   }

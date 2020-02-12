@@ -16,9 +16,11 @@ const routes = [
   }
 ]
 
+/* global USE_HISTORY */
+
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: USE_HISTORY ? 'history' : 'hash'
 })
 
 export default router
