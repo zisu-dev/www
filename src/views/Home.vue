@@ -2,7 +2,7 @@
   <v-container class="home">
     <v-row justify="center" v-show="mainlandChina">
       <v-col cols="12" sm="6" md="4">
-        <v-alert prominent v-model="mainlandChina" type="error" class="ma-0">
+        <v-alert prominent v-model="mainlandChina" type="error" class="ma-0" dismissible>
           <div class="subtitle-1">Your're in mainland China.</div>
           <div class="caption">
             Due to the network restrictions,
@@ -19,7 +19,7 @@
     </v-row>
     <v-row justify="center" v-show="ipv4Only">
       <v-col cols="12" sm="6" md="4">
-        <v-alert prominent v-model="ipv4Only" type="warning" class="ma-0">
+        <v-alert prominent v-model="ipv4Only" type="warning" class="ma-0" dismissible>
           <div class="subtitle-1">IPv4-Only network detected.</div>
           <div class="caption">
             <ul>
@@ -49,6 +49,17 @@
         <v-card class="vibrancy">
           <v-card-title>Next</v-card-title>
           <v-list>
+            <v-list-item href="https://zlog.zhangzisu.cn/" target="_blank">
+              <v-list-item-avatar tile>
+                <v-img :src="require('@/assets/logo.svg')" contain/>
+              </v-list-item-avatar>
+              <v-list-item-content>
+                <v-list-item-title>Notebook</v-list-item-title>
+                <v-list-item-subtitle>
+                  Powered by ZLog
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
             <v-list-item :href="ipv4Only ? 'https://proxy-dt.zhangzisu.cn/cockpit' : 'https://dt.zhangzisu.cn/cockpit'" target="_blank">
               <v-list-item-avatar>
                 <v-img src="https://cockpit-project.org/images/favicon.png"/>

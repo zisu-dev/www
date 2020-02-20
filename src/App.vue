@@ -4,7 +4,7 @@
       <v-list nav>
         <v-list-item to="/">
           <v-list-item-avatar tile size="24">
-            <img :src="require('@/assets/logo.svg')"/>
+            <v-img contain :src="require('@/assets/logo.svg')"/>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
