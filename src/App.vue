@@ -18,6 +18,14 @@
             <v-list-item-title>About me</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item to="/status">
+          <v-list-item-avatar tile size="24px">
+            <v-icon>mdi-traffic-light</v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>Status</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-content>
