@@ -154,7 +154,7 @@
                 <v-icon color="#4FC08D">mdi-vuejs</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-subtitle>Framwork</v-list-item-subtitle>
+                <v-list-item-subtitle>Framework</v-list-item-subtitle>
                 <v-list-item-title>
                   <code>Vue</code>
                 </v-list-item-title>
