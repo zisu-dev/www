@@ -50,7 +50,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card>
+        <v-card color="#FFFFFFc0">
           <v-card-title>Next</v-card-title>
           <v-divider/>
           <v-list color="transparent">

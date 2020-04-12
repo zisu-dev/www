@@ -84,7 +84,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="8" md="4">
-        <v-card light>
+        <v-card color="#FFFFFFc0">
           <v-card-title>Social</v-card-title>
           <v-divider/>
           <v-list color="transparent">
@@ -110,7 +110,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card>
+        <v-card color="#FFFFFFc0">
           <v-card-title>About site</v-card-title>
           <v-divider/>
           <v-list color="transparent">

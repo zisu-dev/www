@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12">
-        <v-card>
+        <v-card color="#FFFFFFc0">
           <v-list color="transparent">
             <v-list-item href="https://app.netlify.com/sites/zhangzisu/deploys" target="_blank">
               <v-list-item-content>
