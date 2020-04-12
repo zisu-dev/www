@@ -18,35 +18,24 @@
 }
 
 body {
-  background-image: url(https://i.loli.net/2020/02/11/5RQbBs6hKHGwliV.png);
+  background-image: url(/static/bg.png);
   background-size: cover;
-  background-position: right;
   background-attachment: fixed;
 }
 
-.vibrancy.v-application {
+.v-application {
   background: transparent !important;
 }
 
-.vibrancy.v-navigation-drawer {
-  transition: .3s;
-}
-
-.vibrancy.theme--light.v-navigation-drawer {
-  background: #ffffff7f !important;
+.theme--light.v-navigation-drawer {
+  background: #ffffffc0 !important;
   backdrop-filter: blur(10px);
 }
 
-.vibrancy.theme--light.v-navigation-drawer:hover {
-  background: #ffffff !important;
+.v-card {
+  backdrop-filter: blur(10px)
 }
 
-.vibrancy.v-card {
-  opacity: .7;
-  transition: .3s;
-  backdrop-filter: blur(10px);
-}
-
-.vibrancy.v-card:hover {
-  opacity: 1;
+.theme--light.v-card {
+  background-color: #FFFFFFc0;
 }

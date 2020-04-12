@@ -1,6 +1,6 @@
 <template>
-  <v-app class="vibrancy">
-    <v-navigation-drawer app expand-on-hover disable-resize-watcher disable-route-watcher permanent :value="true" class="vibrancy">
+  <v-app>
+    <v-navigation-drawer app expand-on-hover disable-resize-watcher disable-route-watcher permanent :value="true">
       <v-list nav>
         <v-list-item to="/">
           <v-list-item-avatar tile size="24">
@@ -23,13 +23,15 @@
             <v-icon>mdi-traffic-light</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>Status</v-list-item-title>
+            <v-list-item-title>CI</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-content>
-      <router-view/>
+      <v-scroll-x-transition hide-on-leave>
+        <router-view/>
+      </v-scroll-x-transition>
     </v-content>
     <div class="background" ref="background">
       <div class="layer">
@@ -57,6 +59,6 @@ export default {
 
 <style scoped>
 .site-title {
-  font-family: 'Courier New', Courier, monospace
+  font-family: 'Cascadia Code', Consolas, 'Courier New', monospace
 }
 </style>

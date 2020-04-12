@@ -2,8 +2,8 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12">
-        <v-card class="vibrancy">
-          <v-list>
+        <v-card>
+          <v-list color="transparent">
             <v-list-item href="https://app.netlify.com/sites/zhangzisu/deploys" target="_blank">
               <v-list-item-content>
                 <v-list-item-title>WWW</v-list-item-title>

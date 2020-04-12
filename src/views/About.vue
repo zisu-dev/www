@@ -2,11 +2,11 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12" sm="8" md="4">
-        <v-card color="primary" dark class="vibrancy">
+        <v-card color="#1976D2c0" dark>
           <v-card-title>
             <div class="fill-width">
               <div class="title">About me</div>
-              <div class="subtitle-1 text-right">Zhang Zisu (张子苏)</div>
+              <div class="subtitle-1 text-right">Zhang Zisu - 张子苏</div>
             </div>
           </v-card-title>
           <v-divider/>
@@ -39,7 +39,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="8" md="4">
-        <v-card class="vibrancy" dark color="#3498db">
+        <v-card dark color="#3498dbc0">
           <v-row justify="space-between">
             <v-col cols="auto">
               <div class="ml-4 mt-2">
@@ -64,7 +64,7 @@
             </v-list-item>
             <v-list-item href="https://github.com/zhangzisu/" target="_blank">
               <v-list-item-avatar>
-                <v-icon color="#181717">mdi-github-circle</v-icon>
+                <v-icon color="#181717">mdi-github</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>ZhangZisu</v-list-item-title>
@@ -84,7 +84,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="8" md="4">
-        <v-card class="vibrancy social-card" light>
+        <v-card light>
           <v-card-title>Social</v-card-title>
           <v-divider/>
           <v-list color="transparent">
@@ -110,10 +110,10 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card class="vibrancy">
+        <v-card>
           <v-card-title>About site</v-card-title>
           <v-divider/>
-          <v-list>
+          <v-list color="transparent">
             <v-subheader>Build info</v-subheader>
             <v-list-item :href="build.git" target="_blank">
               <v-list-item-icon>
@@ -201,11 +201,3 @@ export default {
   })
 }
 </script>
-
-<style scoped>
-.social-card {
-  background-image: url(https://i.loli.net/2020/02/12/ipkf6whvJ48TI3K.png) !important;
-  background-size: contain !important;
-  background-position: right;
-}
-</style>
