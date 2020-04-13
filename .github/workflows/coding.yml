@@ -23,7 +23,7 @@ jobs:
     - run: yarn build
     - uses: zhangzisu/git-repo-deploy-action@v0
       with:
-        REPO: ${{ secrets.CODING_REPO }}
-        NAME: ZhangZisu(CI)
-        EMAIL: system@zhangzisu.cn
-        SINGLE_COMMIT: true
+        repo: ${{ secrets.CODING_REPO }}
+        name: ZhangZisu(CI)
+        email: system@zhangzisu.cn
+        single: true
