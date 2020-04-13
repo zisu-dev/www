@@ -21,8 +21,9 @@ jobs:
     - run: npm i -g yarn
     - run: yarn
     - run: yarn build
-    - uses: zhangzisu/git-repo-deploy-action@test1
+    - uses: zhangzisu/git-repo-deploy-action@v0
       with:
         REPO: ${{ secrets.CODING_REPO }}
-      env:
-        CI: true
+        NAME: ZhangZisu(CI)
+        EMAIL: system@zhangzisu.cn
+        SINGLE_COMMIT: true
