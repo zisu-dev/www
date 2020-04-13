@@ -21,7 +21,7 @@ jobs:
     - run: npm i -g yarn
     - run: yarn
     - run: yarn build
-    - uses: zhangzisu/git-repo-deploy-action@test
+    - uses: zhangzisu/git-repo-deploy-action@test1
       with:
         REPO: ${{ secrets.CODING_REPO }}
       env:
