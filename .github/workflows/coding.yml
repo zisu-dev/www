@@ -21,6 +21,9 @@ jobs:
     - run: npm i -g yarn
     - run: yarn
     - run: yarn build
+      env:
+        IN_MAINLAND_CHINA: true
+        ENABLE_HISTORY: false
     - uses: zhangzisu/git-repo-deploy-action@v0
       with:
         repo: ${{ secrets.CODING_REPO }}
