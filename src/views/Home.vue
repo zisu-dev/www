@@ -54,25 +54,38 @@
           <v-card-title>Next</v-card-title>
           <v-divider/>
           <v-list color="transparent">
-            <v-list-item href="https://zlog.zhangzisu.cn/" target="_blank">
+            <v-list-item href="https://blog.zhangzisu.cn/" target="_blank">
               <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/logo.svg')" contain/>
+                <v-img :src="require('@/assets/logo.png')" contain/>
+              </v-list-item-avatar>
+              <v-list-item-content>
+                <v-list-item-title>Blog</v-list-item-title>
+                <v-list-item-subtitle>
+                  ZhangZisu.CN Blog
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item href="https://zlog.zhangzisu.cn/" target="_blank" disabled>
+              <v-list-item-avatar tile>
+                <v-img :src="require('@/assets/logo.png')" contain/>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Notebook</v-list-item-title>
                 <v-list-item-subtitle>
-                  Powered by ZLog
+                  <!-- Powered by ZLog -->
+                  In maintenance mode
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item :href="ipv4Only ? 'https://proxy-dt.zhangzisu.cn/cockpit' : 'https://dt.zhangzisu.cn/cockpit'" target="_blank">
+            <v-list-item href="https://dt.zhangzisu.cn/cockpit" target="_blank" disabled>
               <v-list-item-avatar>
                 <v-img src="https://cockpit-project.org/images/favicon.png"/>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Datacenter Cockpit</v-list-item-title>
                 <v-list-item-subtitle>
-                  {{ ipv4Only ? 'Proxied with Cloudflare' : 'IPv6 only' }}
+                  <!-- IPv6 only -->
+                  In maintenance mode
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
