@@ -17,12 +17,6 @@
   width: 100%
 }
 
-body {
-  background-image: url(/static/bg.png);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .v-application {
   background: transparent !important;
 }

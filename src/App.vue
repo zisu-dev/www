@@ -33,32 +33,28 @@
         <router-view/>
       </v-scroll-x-transition>
     </v-content>
-    <div class="background" ref="background">
-      <div class="layer">
-        <div class="background-img"/>
-      </div>
+    <div id="background">
+      <v-img src="/static/bg.png" height="100%"/>
     </div>
   </v-app>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  components: {
-  },
-  data: () => ({
-  }),
-  methods: {
-  },
-  created () {
-  },
-  beforeDestroy () {
-  }
+  name: 'App'
 }
 </script>
 
 <style scoped>
 .site-title {
   font-family: 'Cascadia Code', Consolas, 'Courier New', monospace
+}
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 </style>
