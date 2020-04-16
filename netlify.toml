@@ -1,11 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "https://mainland.zhangzisu.cn/#/:splat"
-  status = 301
-  force = true
-  conditions = {Country = ["cn"]}
-
-[[redirects]]
-  from = "/*"
   to = "/index.html"
   status = 200
