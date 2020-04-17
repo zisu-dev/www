@@ -23,7 +23,7 @@ jobs:
     - run: yarn build
       env:
         IN_MAINLAND_CHINA: true
-        ENABLE_HISTORY: false
+    - run: cp dist/index.html dist/404.html
     - uses: zhangzisu/git-repo-deploy-action@v0
       with:
         repo: ${{ secrets.CODING_REPO }}
