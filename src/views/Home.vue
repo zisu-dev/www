@@ -56,7 +56,7 @@
           <v-list color="transparent">
             <v-list-item href="https://blog.zhangzisu.cn/" target="_blank">
               <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/logo.png')" contain/>
+                <v-img :src="require('@/assets/logo.svg')" contain/>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Blog</v-list-item-title>
@@ -78,7 +78,7 @@
             </v-list-item>
             <v-list-item href="https://zlog.zhangzisu.cn/" target="_blank" disabled>
               <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/logo.png')" contain/>
+                <v-img :src="require('@/assets/logo.svg')" contain/>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Notebook</v-list-item-title>
