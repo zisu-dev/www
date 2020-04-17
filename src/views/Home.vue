@@ -65,6 +65,17 @@
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
+            <v-list-item href="https://status.zhangzisu.cn/" target="_blank">
+              <v-list-item-avatar tile>
+                <v-img :src="require('@/assets/uptimerobot.svg')" contain/>
+              </v-list-item-avatar>
+              <v-list-item-content>
+                <v-list-item-title>Status</v-list-item-title>
+                <v-list-item-subtitle>
+                  ZhangZisu.CN Status
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
             <v-list-item href="https://zlog.zhangzisu.cn/" target="_blank" disabled>
               <v-list-item-avatar tile>
                 <v-img :src="require('@/assets/logo.png')" contain/>
@@ -73,7 +84,7 @@
                 <v-list-item-title>Notebook</v-list-item-title>
                 <v-list-item-subtitle>
                   <!-- Powered by ZLog -->
-                  In maintenance mode
+                  Offline
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -85,7 +96,7 @@
                 <v-list-item-title>Datacenter Cockpit</v-list-item-title>
                 <v-list-item-subtitle>
                   <!-- IPv6 only -->
-                  In maintenance mode
+                  Offline
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
