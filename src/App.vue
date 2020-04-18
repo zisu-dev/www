@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app expand-on-hover disable-resize-watcher disable-route-watcher permanent :value="true">
+    <v-navigation-drawer app :mobile-break-point="$vuetify.breakpoint.thresholds.xs" :expand-on-hover="!$vuetify.breakpoint.xs" v-model="drawer">
       <v-list nav>
         <v-list-item to="/">
           <v-list-item-avatar tile size="24">
@@ -41,7 +41,13 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: () => ({
+    drawer: true
+  }),
+  created () {
+    this.drawer = !this.$vuetify.breakpoint.xs
+  }
 }
 </script>
 
