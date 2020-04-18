@@ -6,16 +6,16 @@
           <v-list color="transparent">
             <v-list-item href="https://app.netlify.com/sites/zhangzisu/deploys" target="_blank">
               <v-list-item-content>
-                <v-list-item-title>WWW</v-list-item-title>
+                <v-list-item-title>Index</v-list-item-title>
                 <v-list-item-subtitle>zhangzisu.cn</v-list-item-subtitle>
               </v-list-item-content>
               <v-list-item-action>
                 <v-img :src="'https://img.shields.io/netlify/49a9880e-8ee7-4506-8575-0dcd7b335fb6?logo=netlify&style=flat-square&t=' + t"/>
               </v-list-item-action>
             </v-list-item>
-            <v-list-item href="https://zhangzisu.coding.net/p/www/ci/job" target="_blank">
+            <v-list-item href="https://github.com/zhangzisu-cn/www/actions?query=workflow%3A%22Deploy+to+Coding%22" target="_blank">
               <v-list-item-content>
-                <v-list-item-title>WWW</v-list-item-title>
+                <v-list-item-title>Index</v-list-item-title>
                 <v-list-item-subtitle>mainland.zhangzisu.cn</v-list-item-subtitle>
               </v-list-item-content>
               <v-list-item-action>
@@ -29,6 +29,15 @@
               </v-list-item-content>
               <v-list-item-action>
                 <v-img :src="'https://img.shields.io/netlify/fb7bef3d-d3d8-482e-93db-67e542c8d8b5?logo=netlify&style=flat-square&t=' + t"/>
+              </v-list-item-action>
+            </v-list-item>
+            <v-list-item href="https://github.com/zhangzisu-cn/blog/actions?query=workflow%3ACoding" target="_blank">
+              <v-list-item-content>
+                <v-list-item-title>Blog</v-list-item-title>
+                <v-list-item-subtitle>blog.mainland.zhangzisu.cn</v-list-item-subtitle>
+              </v-list-item-content>
+              <v-list-item-action>
+                <v-img :src="'https://img.shields.io/github/workflow/status/zhangzisu-cn/blog/Coding?logo=github&style=flat-square&t=' + t"/>
               </v-list-item-action>
             </v-list-item>
             <v-list-item href="https://zhangzisu.coding.net/p/zlog/ci/job" target="_blank">
