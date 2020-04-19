@@ -33,6 +33,7 @@
         <router-view/>
       </v-scroll-x-transition>
     </v-content>
+    <app-footer/>
     <div id="background">
       <v-img src="/static/bg.png" height="100%"/>
     </div>
@@ -40,8 +41,13 @@
 </template>
 
 <script>
+import AppFooter from '@/components/AppFooter.vue'
+
 export default {
   name: 'App',
+  components: {
+    AppFooter
+  },
   data: () => ({
     drawer: true
   }),
