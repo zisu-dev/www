@@ -10,10 +10,8 @@
             </div>
           </v-card-title>
           <v-divider/>
-          <v-card-text>
-            <p>
-              <q>Being aware of death, then become aware of life.</q>
-            </p>
+          <v-card-text class="text-center text-uppercase motto">
+            code is philosophy
           </v-card-text>
           <v-divider/>
           <v-list color="transparent">
@@ -201,3 +199,13 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+.motto {
+  font-family: 'Slabo 27px', serif;
+  color: #FFF !important;
+  font-size: 2em;
+}
+</style>
