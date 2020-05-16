@@ -1,47 +1,13 @@
 <template>
   <v-container class="home">
-    <v-scroll-x-transition>
-      <v-row justify="center" v-show="mainlandChina">
-        <v-col cols="12" sm="6" md="4">
-          <v-alert prominent v-model="mainlandChina" type="error" class="ma-0" dismissible>
-            <div class="subtitle-1">Your're in mainland China.</div>
-            <div class="caption">
-              Due to the network restrictions,
-              <ul>
-                <li>The site will switch to mainland China servers when possible;</li>
-                <li>Some function will be disabled;</li>
-                <li>However, you may still experience slow performance.</li>
-              </ul>
-              If you have already using a bypass service,
-              <a href="https://zhangzisu.cn">click here.</a>
-            </div>
-          </v-alert>
-        </v-col>
-      </v-row>
-    </v-scroll-x-transition>
-    <v-scroll-x-transition>
-      <v-row justify="center" v-show="ipv4Only">
-        <v-col cols="12" sm="6" md="4">
-          <v-alert prominent v-model="ipv4Only" type="warning" class="ma-0" dismissible>
-            <div class="subtitle-1">IPv4-Only network detected.</div>
-            <div class="caption">
-              <ul>
-                <li>Some server will become inaccessible;</li>
-                <li>Some server will use proxy;</li>
-                <li>You may experience performance downgrade.</li>
-              </ul>
-              Please contact your ISP for IPv6 support.
-            </div>
-          </v-alert>
-        </v-col>
-      </v-row>
-    </v-scroll-x-transition>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
         <v-card color="#1976D2c0" dark>
           <v-card-title>
             <div class="fill-width">
-              <div class="text-uppercase font-italic font-weight-light subtitle-1">Welcome to</div>
+              <div class="text-uppercase font-italic font-weight-light subtitle-1">
+                {{ $t('welcome-title') }}
+              </div>
               <div class="text-right display-1 font-weight-thin">ZhangZisu.CN</div>
             </div>
           </v-card-title>
@@ -51,7 +17,7 @@
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
         <v-card color="#FFFFFFc0">
-          <v-card-title>Next</v-card-title>
+          <v-card-title>{{ $t('next') }}</v-card-title>
           <v-divider/>
           <v-list color="transparent">
             <v-list-item href="https://blog.zhangzisu.cn/" target="_blank">

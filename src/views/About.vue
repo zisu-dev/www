@@ -5,13 +5,13 @@
         <v-card color="#1976D2c0" dark>
           <v-card-title>
             <div class="fill-width">
-              <div class="title">About me</div>
+              <div class="title">{{ $t('about-me') }}</div>
               <div class="subtitle-1 text-right">Zhang Zisu - 张子苏</div>
             </div>
           </v-card-title>
           <v-divider/>
           <v-card-text class="text-center text-uppercase motto">
-            code is philosophy
+            {{ $t('moto') }}
           </v-card-text>
           <v-divider/>
           <v-list color="transparent">
@@ -41,7 +41,7 @@
           <v-row justify="space-between">
             <v-col cols="auto">
               <div class="ml-4 mt-2">
-                <div class="title">Contact</div>
+                <div class="title">{{ $t('contact') }}</div>
               </div>
             </v-col>
             <v-col cols="auto">
@@ -83,7 +83,7 @@
     <v-row justify="center">
       <v-col cols="12" sm="8" md="4">
         <v-card color="#FFFFFFc0">
-          <v-card-title>Social</v-card-title>
+          <v-card-title>{{ $t('social') }}</v-card-title>
           <v-divider/>
           <v-list color="transparent">
             <v-list-item href="https://twitter.com/zisu_zhang" target="_blank">
@@ -109,16 +109,16 @@
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
         <v-card color="#FFFFFFc0">
-          <v-card-title>About site</v-card-title>
+          <v-card-title>{{ $t('about-site') }}</v-card-title>
           <v-divider/>
           <v-list color="transparent">
-            <v-subheader>Build info</v-subheader>
+            <v-subheader>{{ $t('build-info') }}</v-subheader>
             <v-list-item :href="build.git" target="_blank">
               <v-list-item-icon>
                 <v-icon color="#F05032">mdi-git</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-subtitle>Git hash</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ $t('git-hash') }}</v-list-item-subtitle>
                 <v-list-item-title>
                   <code>{{ build.hash }}</code>
                 </v-list-item-title>
@@ -129,7 +129,7 @@
                 <v-icon>mdi-server</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-subtitle>Build machine</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ $t('build-machine') }}</v-list-item-subtitle>
                 <v-list-item-title>
                   <code>{{ build.machine }}</code>
                 </v-list-item-title>
@@ -140,19 +140,19 @@
                 <v-icon>mdi-calendar</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-subtitle>Build date</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ $t('build-date') }}</v-list-item-subtitle>
                 <v-list-item-title>
                   <code>{{ build.date }}</code>
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-subheader>Built with</v-subheader>
+            <v-subheader>{{ $t('built-with') }}</v-subheader>
             <v-list-item>
               <v-list-item-icon>
                 <v-icon color="#4FC08D">mdi-vuejs</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-subtitle>Framework</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ $t('framework') }}</v-list-item-subtitle>
                 <v-list-item-title>
                   <code>Vue</code>
                 </v-list-item-title>
@@ -163,7 +163,7 @@
                 <v-icon color="#1867C0">mdi-vuetify</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-subtitle>UI Components</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ $t('ui-components') }}</v-list-item-subtitle>
                 <v-list-item-title>
                   <code>Vuetify</code>
                 </v-list-item-title>

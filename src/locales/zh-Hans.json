@@ -1,0 +1,19 @@
+{
+  "about": "关于",
+  "about-me": "关于我",
+  "about-site": "关于此网站",
+  "build-date": "构建日期",
+  "build-info": "构建信息",
+  "build-machine": "构建机器",
+  "built-with": "技术选型",
+  "ci-status": "持续集成状态",
+  "contact": "联系",
+  "framework": "框架",
+  "git-hash": "Git哈希",
+  "home": "主页",
+  "moto": "代码即哲学",
+  "next": "下一步",
+  "social": "社交",
+  "ui-components": "UI部件",
+  "welcome-title": "欢迎访问"
+}

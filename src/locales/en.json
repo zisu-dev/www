@@ -1,0 +1,19 @@
+{
+  "about": "About",
+  "about-me": "About me",
+  "about-site": "About site",
+  "build-date": "Build date",
+  "build-info": "Build info",
+  "build-machine": "Build machine",
+  "built-with": "Built with",
+  "ci-status": "CI Status",
+  "contact": "Contact",
+  "framework": "Framework",
+  "git-hash": "Git hash",
+  "home": "Home",
+  "moto": "Code is philosophy",
+  "next": "Next",
+  "social": "Social",
+  "ui-components": "UI Components",
+  "welcome-title": "Welcome to"
+}

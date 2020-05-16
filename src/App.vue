@@ -7,7 +7,7 @@
             <v-img contain :src="require('@/assets/logo.svg')"/>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>{{ $t('home') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item to="/about">
@@ -15,7 +15,7 @@
             <v-icon>mdi-account</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>About</v-list-item-title>
+            <v-list-item-title>{{ $t('about') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item to="/status">
@@ -23,7 +23,7 @@
             <v-icon>mdi-traffic-light</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>CI</v-list-item-title>
+            <v-list-item-title>{{ $t('ci-status') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

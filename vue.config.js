@@ -22,5 +22,14 @@ module.exports = {
         MAINLAND_CHN: JSON.stringify(inMainlandChina)
       })
     ]
+  },
+
+  pluginOptions: {
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: true
+    }
   }
 }
