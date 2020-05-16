@@ -1583,13 +1583,6 @@ async-limiter@~1.0.0:
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
 
-async-stylesheet-webpack-plugin@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/async-stylesheet-webpack-plugin/-/async-stylesheet-webpack-plugin-0.4.1.tgz#14ae43331827bfa4fe15cff9a38016adf102efae"
-  integrity sha512-/VQQhN97Q9uYWnEmgjfG56bkJ0P0D7biVUYE0UciTihS2cYiz4rP12GOepFnSowI06kcwF1FWwqE6rPHICiimQ==
-  dependencies:
-    fg-loadcss "2.0.1"
-
 async@^2.6.2:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
@@ -3705,11 +3698,6 @@ faye-websocket@~0.11.1:
   integrity sha512-D2y4bovYpzziGgbHYtGCMjlJM36vAl/y+xUyn1C+FVx8szd1E+86KwVw6XvYSzOP8iMpm1X0I4xJD+QtUb36OA==
   dependencies:
     websocket-driver ">=0.5.1"
-
-fg-loadcss@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/fg-loadcss/-/fg-loadcss-2.0.1.tgz#71c00e470a57f7739d0736124dfc8791995e8af1"
-  integrity sha512-gFtSJjMMt9it0OhXz4wJQT46/LFUrJ2Db6U/fLtwClBEMEEjmVPSWSYrbGCyFwy47Cd4ULOpR+HSWXVkUKciaQ==
 
 figgy-pudding@^3.5.1:
   version "3.5.2"

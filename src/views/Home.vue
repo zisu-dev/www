@@ -31,6 +31,17 @@
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
+            <v-list-item href="https://blog.mainland.zhangzisu.cn/" target="_blank">
+              <v-list-item-avatar tile>
+                <v-img :src="require('@/assets/logo.svg')" contain/>
+              </v-list-item-avatar>
+              <v-list-item-content>
+                <v-list-item-title>Blog (Alternative)</v-list-item-title>
+                <v-list-item-subtitle>
+                  ZhangZisu.CN Blog, for mainland China
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
             <v-list-item href="https://status.zhangzisu.cn/" target="_blank">
               <v-list-item-avatar tile>
                 <v-img :src="require('@/assets/uptimerobot.svg')" contain/>
@@ -42,27 +53,14 @@
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item href="https://zlog.zhangzisu.cn/" target="_blank" disabled>
+            <v-list-item href="https://dt.zhangzisu.cn" target="_blank">
               <v-list-item-avatar tile>
                 <v-img :src="require('@/assets/logo.svg')" contain/>
               </v-list-item-avatar>
               <v-list-item-content>
-                <v-list-item-title>Notebook</v-list-item-title>
+                <v-list-item-title>DT-ZHANGZISU</v-list-item-title>
                 <v-list-item-subtitle>
-                  <!-- Powered by ZLog -->
-                  Offline
-                </v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item href="https://dt.zhangzisu.cn/cockpit" target="_blank" disabled>
-              <v-list-item-avatar>
-                <v-img src="https://cockpit-project.org/images/favicon.png"/>
-              </v-list-item-avatar>
-              <v-list-item-content>
-                <v-list-item-title>Datacenter Cockpit</v-list-item-title>
-                <v-list-item-subtitle>
-                  <!-- IPv6 only -->
-                  Offline
+                  Datacenter - IPv6 only
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
