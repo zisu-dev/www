@@ -28,11 +28,11 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-content>
+    <v-main>
       <v-scroll-x-transition hide-on-leave>
         <router-view/>
       </v-scroll-x-transition>
-    </v-content>
+    </v-main>
     <app-footer/>
     <div id="background">
       <v-img src="/static/bg.png" height="100%"/>

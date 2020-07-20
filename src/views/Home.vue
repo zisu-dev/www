@@ -21,9 +21,6 @@
           <v-divider/>
           <v-list color="transparent">
             <v-list-item href="https://blog.zhangzisu.cn/" target="_blank">
-              <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/logo.svg')" contain/>
-              </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Blog</v-list-item-title>
                 <v-list-item-subtitle>
@@ -31,21 +28,15 @@
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item href="https://blog.mainland.zhangzisu.cn/" target="_blank">
-              <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/logo.svg')" contain/>
-              </v-list-item-avatar>
+            <v-list-item href="https://proxy.zhangzisu.cn/" target="_blank">
               <v-list-item-content>
-                <v-list-item-title>Blog (Alternative)</v-list-item-title>
+                <v-list-item-title>Proxy</v-list-item-title>
                 <v-list-item-subtitle>
-                  ZhangZisu.CN Blog, for mainland China
+                  ZhangZisu.CN Proxy Services
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
             <v-list-item href="https://status.zhangzisu.cn/" target="_blank">
-              <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/uptimerobot.svg')" contain/>
-              </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Status</v-list-item-title>
                 <v-list-item-subtitle>
@@ -53,18 +44,12 @@
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item href="https://dt.zhangzisu.cn" target="_blank">
-              <v-list-item-avatar tile>
-                <v-img :src="require('@/assets/logo.svg')" contain/>
-              </v-list-item-avatar>
-              <v-list-item-content>
-                <v-list-item-title>DT-ZHANGZISU</v-list-item-title>
-                <v-list-item-subtitle>
-                  Datacenter - IPv6 only
-                </v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
           </v-list>
+          <!-- <v-divider/>
+          <v-card-actions>
+            <v-spacer/>
+            <div class="text-overline">Website thumbnails by <a href="https://pagepeeker.com/" target="_blank">PagePeeker.com</a></div>
+          </v-card-actions> -->
         </v-card>
       </v-col>
     </v-row>
