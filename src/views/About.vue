@@ -44,11 +44,6 @@
                 <div class="title">{{ $t('contact') }}</div>
               </div>
             </v-col>
-            <v-col cols="auto">
-              <v-avatar tile size="48" class="mr-2">
-                <v-img :src="avatar"/>
-              </v-avatar>
-            </v-col>
           </v-row>
           <v-divider/>
           <v-list color="transparent">

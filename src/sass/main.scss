@@ -8,7 +8,6 @@
 
 .v-application code {
   background-color: initial;
-  color: initial;
   -webkit-box-shadow: initial;
   box-shadow: initial;
 }
@@ -17,19 +16,9 @@
   width: 100%
 }
 
-.v-application {
-  background: transparent !important;
-}
-
-.theme--light.v-navigation-drawer {
-  background: #ffffffc0 !important;
-  backdrop-filter: blur(10px);
-}
-
-.v-card {
-  backdrop-filter: blur(10px)
-}
-
-.theme--light.v-card {
-  background-color: #FFFFFFc0;
+.acrylic {
+  .v-app-bar, .v-footer, .v-card, .v-navigation-drawer, .v-menu__content,
+  .v-pagination__navigation, .v-pagination__item {
+    backdrop-filter: blur(10px)
+  }
 }
