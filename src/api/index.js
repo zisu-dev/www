@@ -1,4 +1,4 @@
-const hub = 'http://localdev.zhangzisu.cn:8081/embed'
+const hub = 'https://hub.zhangzisu.cn/embed.html'
 
 export const api = new Promise((resolve, reject) => {
   const iframe = document.createElement('iframe')

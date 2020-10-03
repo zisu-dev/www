@@ -37,7 +37,7 @@ export default {
     },
     login () {
       this.loading = true
-      const win = window.open('http://localdev.zhangzisu.cn:8081/#/login?embed=1', 'Login', 'height=640,width=480')
+      const win = window.open('https://hub.zhangzisu.cn/#/login?embed=1', 'Login', 'height=640,width=480')
       const cb = ev => {
         if (ev.source === win && ev.data === 'done') {
           window.removeEventListener('message', cb)
